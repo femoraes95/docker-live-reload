@@ -1,0 +1,8 @@
+version: '2'
+services:
+  app-reload:
+    image: app-reload
+    build: .
+    volumes:
+      - .:/app-reload
+  
