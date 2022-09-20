@@ -19,6 +19,7 @@ venom
 function start(client) {
   client.onMessage((message) => {
     if (message.isGroupMsg === false) {
+      console.log(message.from);
       client
         .sendText(
           message.from,
